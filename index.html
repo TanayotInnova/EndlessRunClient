@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | scbEndlessGame</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=540 height=960 style="width: 540px; height: 960px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=405 height=720 style="width: 405px; height: 720px; background: #231F20"></canvas>
     <script src="Build/Builds.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Builds.data.gz",
-        frameworkUrl: "Build/Builds.framework.js.gz",
-        codeUrl: "Build/Builds.wasm.gz",
+        dataUrl: "Build/Builds.data",
+        frameworkUrl: "Build/Builds.framework.js",
+        codeUrl: "Build/Builds.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "innova",
         productName: "scbEndlessGame",
